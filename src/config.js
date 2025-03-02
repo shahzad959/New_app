@@ -1,5 +1,3 @@
-export const API_URL = window.location.hostname === "localhost"
-  ? "http://localhost:27017"
-  : "https://labs-mongo-red-steep-ghost.mongo.databases.labs.skills.network";
+export const API_URL = window.location.hostname === "localhost" ? "https://labs-mongo-incalculable-damaged-arm.mongo.databases.labs.skills.network" :"https://labs-mongo-incalculable-damaged-arm.mongo.databases.labs.skills.network>"
 
 console.log("API_URL:", API_URL);

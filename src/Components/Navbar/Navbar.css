@@ -1,5 +1,4 @@
 /** 
- * Following code has been commented with appropriate comments for your reference.
  * Styling for the Header Navbar
  */
 
@@ -15,6 +14,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+    z-index: 1000; /* Ensure navbar stays on top */
 }
 
 /* Styling for the dropdown menu */
@@ -46,7 +47,7 @@ nav {
 .dropdown-menu li {
     display: block;
     width: 150px;
-    padding:5px;
+    padding: 5px;
 }
 
 /* Styling for links in the dropdown menu */
@@ -103,6 +104,22 @@ nav {
     color: #3685fb;
 }
 
+/* Button styles */
+.btn1 {
+    border: 2px solid #3685fb;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn1:hover {
+    background-color: #3685fb;
+    color: white;
+}
+
 /* Media queries for mobile responsiveness */
 @media (max-width: 768px) {
     .nav__logo {
@@ -134,7 +151,7 @@ nav {
         border-radius: 0.5rem;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         z-index: 999;
-        animation: slideDown 0.5s ease-in-out; /* Animation effect */
+        animation: slideDown 0.5s ease-in-out;
     }
 }
 
@@ -148,34 +165,4 @@ nav {
         transform: translateY(0);
         opacity: 1;
     }
-}
-
-/* Button styles */
-.btn1 {
-    border: 2px solid #3685fb;
-    background-color: white;
-    color: black;
-    border-radius: 50px;
-}
-
-.btn1:hover {
-    background-color: #3685fb; /* Hover effect */
-    color: white; /* Hover effect */
-}
-
-.btn2 {
-    border: 2px solid #3685fb;
-    background-color: white;
-    color: black;
-    border-radius: 50px;
-    height:30px;
-    display:flex; /* Align items and justify content */
-    align-items:center; /* Align items and justify content */
-    justify-content:center; /* Align items and justify content */
-    margin-top:3px; /* Margin from top */
-}
-
-.btn2:hover {
-    background-color:#3685fb; /* Hover effect */
-    color:white; /* Hover effect */
 }

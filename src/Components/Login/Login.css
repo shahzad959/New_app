@@ -20,7 +20,8 @@
 
 /* Styles for form controls */
 .form-control {
-    width: 40%; /* Width of form controls */
+    width: 100%; /* Full width for better responsiveness */
+    max-width: 400px; /* Maximum width for larger screens */
     padding: 8px; /* Padding inside form controls */
     font-size: 16px; /* Font size of form controls */
     border: 1px solid #ccc; /* Border around form controls */
@@ -29,7 +30,7 @@
 
 /* Styles for button groups */
 .btn-group {
-    margin-top: .0001px; /* Top margin for spacing above button groups */
+    margin-top: 10px; /* Adjusted top margin */
     margin-bottom: 20px; /* Bottom margin for spacing below button groups */
 }
 
@@ -40,6 +41,7 @@
     border: none; /* No border for buttons */
     border-radius: 4px; /* Border radius for rounded corners on buttons */
     cursor: pointer; /* Cursor style on hover for buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Styles for primary buttons */
@@ -48,8 +50,18 @@
     color: #fff; /* Text color for primary buttons */
 }
 
+/* Hover effect for primary buttons */
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
 /* Styles for danger (red) buttons */
 .btn-danger {
     background-color: #dc3545; /* Background color for danger buttons */
     color: #fff; /* Text color for danger buttons */
+}
+
+/* Hover effect for danger buttons */
+.btn-danger:hover {
+    background-color: #a71d2a; /* Darker shade on hover */
 }

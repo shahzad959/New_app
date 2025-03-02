@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./LandingPage.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const LandingPage = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
+
   return (
     <section className="hero-section">
       <div>
