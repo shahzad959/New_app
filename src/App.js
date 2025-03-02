@@ -4,6 +4,8 @@ import Navbar from './Components/Navbar/Navbar'; // Import the Navbar component
 import LandingPage from './Components/LandingPage/LandingPage'; // Updated import
 import SignUp from './Components/SignUp/SignUp'; // Updated import
 import Login from './Components/Login/Login'; // Import the Login component
+import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation/InstantConsultation';
+
 import './App.css';
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
           <Route path="/services" element={<h1>Services Page</h1>} /> {/* Example route for the services page */}
           <Route path="/signup" element={<SignUp />} /> {/* Updated component name */}
           <Route path="/login" element={<Login />} /> {/* Route for the Login component */}
+          <Route path="/instant-consultation" element={<InstantConsultation/>} />
         </Routes>
       </div>
     </Router>

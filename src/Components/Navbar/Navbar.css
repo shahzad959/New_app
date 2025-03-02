@@ -166,3 +166,13 @@ nav {
         opacity: 1;
     }
 }
+
+.btn1.instant-booking {
+    background-color: #3685fb;
+    color: white;
+    border: none;
+}
+
+.btn1.instant-booking:hover {
+    background-color: #2190ff;
+}

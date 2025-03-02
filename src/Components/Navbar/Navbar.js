@@ -66,6 +66,9 @@ const Navbar = () => {
                     <Link to="/reviews">Reviews</Link>
                 </li>
 
+                {/* New Instant Booking Consultation Button */}
+                
+
                 {isLoggedIn ? (
                     <>
                         <li className="link">
