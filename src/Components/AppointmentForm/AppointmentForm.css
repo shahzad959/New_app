@@ -1,0 +1,94 @@
+/* Overlay for the form */
+.appointment-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Form container */
+.appointment-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+.appointment-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form group (each input field and label) */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input fields */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Error messages */
+.form-group .error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Form actions (buttons) */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Submit button */
+.form-actions button[type="submit"] {
+  background: #007bff;
+  color: white;
+}
+
+.form-actions button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+/* Cancel button */
+.form-actions button[type="button"] {
+  background: #ccc;
+  color: #333;
+}
+
+.form-actions button[type="button"]:hover {
+  background: #999;
+}
